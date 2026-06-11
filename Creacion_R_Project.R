@@ -10,3 +10,10 @@ dir.create("scripts")        # Para el código (.R)
 dir.create("resultados")     # Para gráficos o tablas exportadas
 dir.create("docs") #Para la documentación del proyecto
 
+#Enlazamos con GitHub---------------------
+install.packages("usethis")
+usethis::use_git()
+usethis::use_github()
+usethis::create_github_token() 
+gitcreds::gitcreds_set()
+
