@@ -40,3 +40,4 @@ enaho_2025 <- enaho_2025 %>%
 library(arrow)
 renv::snapshot()
 write_parquet(enaho_2025, "datos/limpios/enaho_2025.parquet")
+renv::snapshot()
